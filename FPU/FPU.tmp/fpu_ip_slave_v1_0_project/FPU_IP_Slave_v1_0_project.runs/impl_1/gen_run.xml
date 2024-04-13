@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1672887197">
+  <File Type="ROUTE-PWR" Name="FPU_IP_Slave_v1_0_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="FPU_IP_Slave_v1_0.tcl"/>
+  <File Type="BITSTR-MMI" Name="FPU_IP_Slave_v1_0.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="FPU_IP_Slave_v1_0_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="FPU_IP_Slave_v1_0_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="FPU_IP_Slave_v1_0_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="FPU_IP_Slave_v1_0_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="FPU_IP_Slave_v1_0_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="FPU_IP_Slave_v1_0_opt.dcp"/>
+  <File Type="OPT-DRC" Name="FPU_IP_Slave_v1_0_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="FPU_IP_Slave_v1_0.hwdef"/>
+  <File Type="PWROPT-DCP" Name="FPU_IP_Slave_v1_0_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="FPU_IP_Slave_v1_0_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="FPU_IP_Slave_v1_0_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="FPU_IP_Slave_v1_0_placed.dcp"/>
+  <File Type="PLACE-IO" Name="FPU_IP_Slave_v1_0_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="FPU_IP_Slave_v1_0_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="FPU_IP_Slave_v1_0_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FPU_IP_Slave_v1_0_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="FPU_IP_Slave_v1_0_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="FPU_IP_Slave_v1_0_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FPU_IP_Slave_v1_0_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="FPU_IP_Slave_v1_0.bin"/>
+  <File Type="PLACE-TIMING" Name="FPU_IP_Slave_v1_0_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FPU_IP_Slave_v1_0_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="FPU_IP_Slave_v1_0.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="FPU_IP_Slave_v1_0_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="FPU_IP_Slave_v1_0_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="FPU_IP_Slave_v1_0_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="FPU_IP_Slave_v1_0.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="FPU_IP_Slave_v1_0_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="FPU_IP_Slave_v1_0_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="FPU_IP_Slave_v1_0_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FPU_IP_Slave_v1_0_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="FPU_IP_Slave_v1_0_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="FPU_IP_Slave_v1_0_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="FPU_IP_Slave_v1_0_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="FPU_IP_Slave_v1_0_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="FPU_IP_Slave_v1_0_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FPU_IP_Slave_v1_0_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="FPU_IP_Slave_v1_0_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="FPU_IP_Slave_v1_0_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="FPU_IP_Slave_v1_0_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FPU_IP_Slave_v1_0_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="FPU_IP_Slave_v1_0_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="FPU_IP_Slave_v1_0_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="FPU_IP_Slave_v1_0_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="FPU_IP_Slave_v1_0_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="FPU_IP_Slave_v1_0_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="FPU_IP_Slave_v1_0_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="FPU_IP_Slave_v1_0_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="FPU_IP_Slave_v1_0_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="FPU_IP_Slave_v1_0_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="FPU_IP_Slave_v1_0_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="FPU_IP_Slave_v1_0_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="FPU_IP_Slave_v1_0_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="FPU_IP_Slave_v1_0_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="FPU_IP_Slave_v1_0.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="FPU_IP_Slave_v1_0_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="FPU_IP_Slave_v1_0_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="FPU_IP_Slave_v1_0.nky"/>
+  <File Type="BITSTR-BMM" Name="FPU_IP_Slave_v1_0_bd.bmm"/>
+  <File Type="PDI-FILE" Name="FPU_IP_Slave_v1_0.pdi"/>
+  <File Type="RCFI_FILE" Name="FPU_IP_Slave_v1_0.rcfi"/>
+  <File Type="CFI_FILE" Name="FPU_IP_Slave_v1_0.cfi"/>
+  <File Type="RNPI_FILE" Name="FPU_IP_Slave_v1_0.rnpi"/>
+  <File Type="NPI_FILE" Name="FPU_IP_Slave_v1_0.npi"/>
+  <File Type="RBD_FILE" Name="FPU_IP_Slave_v1_0.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="FPU_IP_Slave_v1_0.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="FPU_IP_Slave_v1_0.sysdef"/>
+  <File Type="BG-BGN" Name="FPU_IP_Slave_v1_0.bgn"/>
+  <File Type="BG-DRC" Name="FPU_IP_Slave_v1_0.drc"/>
+  <File Type="RDI-RDI" Name="FPU_IP_Slave_v1_0.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="FPU_IP_Slave_v1_0_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="FPU_IP_Slave_v1_0_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Add Div Normaliser.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Adder.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Divider.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/FPU.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/hdl/FPU_IP_Slave_v1_0_S00_AXI.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier Normaliser.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/hdl/FPU_IP_Slave_v1_0.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FPU_IP_Slave_v1_0"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/hdl/FPU_IP_Slave_v1_0.v"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/Constraints_FPU_IP_Slave.xdc">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../../../../../../../Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/Constraints_FPU_IP_Slave.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

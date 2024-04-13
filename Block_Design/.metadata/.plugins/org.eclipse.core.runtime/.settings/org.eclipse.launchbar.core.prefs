@@ -1,0 +1,12 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_2,org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_3,org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_4,org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_6,org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_5,org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_7,org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_8,org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_9,org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_P3_Software_system
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_2/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_3/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_8/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_P3_Software-Default_9/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_P3_Software_system/activeLaunchMode=run

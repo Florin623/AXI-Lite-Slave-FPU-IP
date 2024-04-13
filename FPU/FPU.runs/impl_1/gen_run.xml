@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1692569357">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-PWR" Name="FPU_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="FPU.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="FPU_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="FPU_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="FPU.msk"/>
+  <File Type="ROUTE-CLK" Name="FPU_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="FPU.vdi"/>
+  <File Type="BG-BIT" Name="FPU.bit"/>
+  <File Type="BG-DRC" Name="FPU.drc"/>
+  <File Type="BG-BGN" Name="FPU.bgn"/>
+  <File Type="BG-BIN" Name="FPU.bin"/>
+  <File Type="BITSTR-RBT" Name="FPU.rbt"/>
+  <File Type="BITSTR-NKY" Name="FPU.nky"/>
+  <File Type="BITSTR-BMM" Name="FPU_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="FPU.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="FPU_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="FPU.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FPU_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="FPU.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="FPU.npi"/>
+  <File Type="OPT-DRC" Name="FPU_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="FPU.rbd"/>
+  <File Type="OPT-HWDEF" Name="FPU.hwdef"/>
+  <File Type="PLACE-IO" Name="FPU_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="FPU_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FPU_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="FPU_control_sets_placed.rpt"/>
+  <File Type="ROUTE-RQS" Name="FPU_routed.rqs"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FPU_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="FPU_postroute_physopted.rqs"/>
+  <File Type="ROUTE-DRC" Name="FPU_drc_routed.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="FPU_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="FPU_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="FPU_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="FPU_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="FPU_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="FPU_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FPU_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FPU_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="FPU_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="FPU_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="FPU_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="FPU_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="FPU_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="FPU_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="FPU_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="FPU_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FPU_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="FPU_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="FPU_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="FPU_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="FPU_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="FPU_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="FPU.pdi"/>
+  <File Type="RCFI_FILE" Name="FPU.rcfi"/>
+  <File Type="CFI_FILE" Name="FPU.cfi"/>
+  <File Type="RNPI_FILE" Name="FPU.rnpi"/>
+  <File Type="ROUTE-SIMILARITY" Name="FPU_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="FPU_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="FPU_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="FPU_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="FPU_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="FPU_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="FPU_bus_skew_postroute_physopted.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Add Div Normaliser.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Adder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Divider.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Multiplier Normaliser.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Multiplier.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FPU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FPU"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Constraints_FPU.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Constraints_FPU.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

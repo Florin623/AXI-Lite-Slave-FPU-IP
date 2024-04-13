@@ -1,0 +1,21 @@
+20:42:09 **** Incremental Build of configuration Debug for project P3_Software ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/sw/Block_Design_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: P3_Software.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/sw/Block_Design_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "P3_Software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: P3_Software.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size P3_Software.elf  |tee "P3_Software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83932	   1692	   3184	  88808	  15ae8	P3_Software.elf
+'Finished building: P3_Software.elf.size'
+' '
+
+20:42:11 Build Finished (took 1s.658ms)
+

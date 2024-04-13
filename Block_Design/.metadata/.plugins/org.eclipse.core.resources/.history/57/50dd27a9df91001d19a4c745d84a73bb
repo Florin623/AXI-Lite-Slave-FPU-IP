@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="P3_Software" location="D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software" platform="D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/Block_Design_wrapper.xpfm" platformUID="xilinx:arty-s7-50::0.0(custom)" systemProject="P3_Software_system" sysConfig="Block_Design_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="0be2cbded6c24527b8585ada94fbe287">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.122339683">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1553178432" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

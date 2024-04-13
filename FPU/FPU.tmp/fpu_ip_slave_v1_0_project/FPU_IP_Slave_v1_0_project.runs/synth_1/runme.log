@@ -1,0 +1,359 @@
+
+*** Running vivado
+    with args -log FPU_IP_Slave_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPU_IP_Slave_v1_0.tcl
+
+
+
+****** Vivado v2022.1.2 (64-bit)
+  **** SW Build 3605665 on Fri Aug  5 22:53:37 MDT 2022
+  **** IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source FPU_IP_Slave_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/materiale pentru facultate/anul 4/semestrul 1/p3/fpu/fpu.tmp/fpu_ip_slave_v1_0_project/FPU_IP_Slave_v1_0_project.cache/ip 
+Command: synth_design -top FPU_IP_Slave_v1_0 -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28360
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1286.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FPU_IP_Slave_v1_0' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/hdl/FPU_IP_Slave_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'FPU_IP_Slave_v1_0_S00_AXI' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/hdl/FPU_IP_Slave_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FPU' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/FPU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Add_Div_Normaliser' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Add Div Normaliser.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Div_Normaliser' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Add Div Normaliser.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Multiplier' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mul_Normaliser' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier Normaliser.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Mul_Normaliser' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier Normaliser.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplier' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Divider' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Divider.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Divider' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Divider.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FPU' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/FPU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FPU_IP_Slave_v1_0_S00_AXI' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/hdl/FPU_IP_Slave_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FPU_IP_Slave_v1_0' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/hdl/FPU_IP_Slave_v1_0.v:4]
+WARNING: [Synth 8-3936] Found unconnected internal register 'o_mantissa_reg' and it is trimmed from '25' to '23' bits. [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier.v:29]
+WARNING: [Synth 8-3936] Found unconnected internal register 'product_reg' and it is trimmed from '48' to '47' bits. [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier.v:76]
+WARNING: [Synth 8-3936] Found unconnected internal register 'o_mantissa_reg' and it is trimmed from '25' to '23' bits. [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Divider.v:32]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/hdl/FPU_IP_Slave_v1_0_S00_AXI.v:228]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module FPU_IP_Slave_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module FPU_IP_Slave_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module FPU_IP_Slave_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module FPU_IP_Slave_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module FPU_IP_Slave_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module FPU_IP_Slave_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1286.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1286.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1286.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1286.180 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/Constraints_FPU_IP_Slave.xdc]
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/Constraints_FPU_IP_Slave.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1326.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1326.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1326.934 ; gain = 40.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1326.934 ; gain = 40.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1326.934 ; gain = 40.754
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'out_e_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Add Div Normaliser.v:11]
+WARNING: [Synth 8-327] inferring latch for variable 'out_m_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Add Div Normaliser.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'o_mantissa_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Adder.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'o_exponent_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Adder.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'o_sign_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Adder.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'i_e_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Adder.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'i_m_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Adder.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'out_e_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier Normaliser.v:11]
+WARNING: [Synth 8-327] inferring latch for variable 'out_m_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier Normaliser.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'i_e_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'i_m_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Multiplier.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'i_e_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Divider.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'i_m_reg' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0/src/Divider.v:37]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1326.934 ; gain = 40.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   25 Bit       Adders := 3     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 7     
+	   3 Input    8 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 13    
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   47 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 5     
+	   6 Input   32 Bit        Muxes := 4     
+	   2 Input   25 Bit        Muxes := 7     
+	   2 Input   24 Bit        Muxes := 13    
+	   2 Input   23 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 17    
+	  20 Input    6 Bit        Muxes := 3     
+	  21 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1, operation Mode is: A*B.
+DSP Report: operator FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1 is absorbed into DSP FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1.
+DSP Report: operator FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1 is absorbed into DSP FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1.
+DSP Report: Generating DSP FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1 is absorbed into DSP FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1.
+DSP Report: operator FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1 is absorbed into DSP FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e1.
+WARNING: [Synth 8-7129] Port in_m[24] in module Add_Div_Normaliser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_m[47] in module Mul_Normaliser is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module FPU_IP_Slave_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module FPU_IP_Slave_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module FPU_IP_Slave_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module FPU_IP_Slave_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module FPU_IP_Slave_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module FPU_IP_Slave_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (add_div_normaliser/out_m_reg[0]) is unused and will be removed from module Adder.
+WARNING: [Synth 8-3332] Sequential element (i_m_reg[24]) is unused and will be removed from module Adder.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[47]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[46]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[22]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[21]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[20]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[19]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[18]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[17]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[16]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[15]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[14]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[13]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[12]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[11]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[10]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[9]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[8]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[7]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[6]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[5]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[4]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[3]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[2]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[1]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (out_m_reg[0]) is unused and will be removed from module Mul_Normaliser.
+WARNING: [Synth 8-3332] Sequential element (FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[47]) is unused and will be removed from module FPU_IP_Slave_v1_0.
+WARNING: [Synth 8-3332] Sequential element (FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[2]) is unused and will be removed from module FPU_IP_Slave_v1_0.
+WARNING: [Synth 8-3332] Sequential element (FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[1]) is unused and will be removed from module FPU_IP_Slave_v1_0.
+WARNING: [Synth 8-3332] Sequential element (FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[0]) is unused and will be removed from module FPU_IP_Slave_v1_0.
+WARNING: [Synth 8-3332] Sequential element (add_div_normaliser/out_m_reg[24]) is unused and will be removed from module Divider.
+WARNING: [Synth 8-3332] Sequential element (add_div_normaliser/out_m_reg[23]) is unused and will be removed from module Divider.
+WARNING: [Synth 8-3332] Sequential element (add_div_normaliser/out_m_reg[0]) is unused and will be removed from module Divider.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1326.934 ; gain = 40.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Multiplier  | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplier  | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1326.934 ; gain = 40.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1343.691 ; gain = 57.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1388.777 ; gain = 102.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1402.438 ; gain = 116.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1402.438 ; gain = 116.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1402.438 ; gain = 116.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1402.438 ; gain = 116.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1402.438 ; gain = 116.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1402.438 ; gain = 116.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Multiplier  | A*B'         | 24     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Multiplier  | PCIN>>17+A*B | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     6|
+|2     |CARRY4  |   214|
+|3     |DSP48E1 |     2|
+|5     |LUT1    |    38|
+|6     |LUT2    |   171|
+|7     |LUT3    |   672|
+|8     |LUT4    |   151|
+|9     |LUT5    |   220|
+|10    |LUT6    |   707|
+|11    |MUXF7   |     4|
+|12    |FDRE    |   445|
+|13    |FDSE    |     1|
+|14    |LD      |   243|
+|15    |IBUF    |    49|
+|16    |OBUF    |    41|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1402.438 ; gain = 116.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 56 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1402.438 ; gain = 75.504
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1402.438 ; gain = 116.258
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1414.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 463 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1420.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 243 instances were transformed.
+  LD => LDCE: 211 instances
+  LD => LDCE (inverted pins: G): 32 instances
+
+Synth Design complete, checksum: c080f5de
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1420.137 ; gain = 133.957
+INFO: [Common 17-1381] The checkpoint 'd:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/FPU/FPU.tmp/fpu_ip_slave_v1_0_project/FPU_IP_Slave_v1_0_project.runs/synth_1/FPU_IP_Slave_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FPU_IP_Slave_v1_0_utilization_synth.rpt -pb FPU_IP_Slave_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  5 04:49:40 2023...

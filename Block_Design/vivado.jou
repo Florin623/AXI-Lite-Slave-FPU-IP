@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Sun Aug 27 02:54:59 2023
+# Process ID: 16324
+# Current directory: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10856 D:\Materiale_pentru_facultate\Licenta\Anul_4\Semestrul_1\P3\Block_Design\Block_Design.xpr
+# Log file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/vivado.log
+# Journal file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design\vivado.jou
+# Running On: DESKTOP-7P0D6RH, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16836 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.srcs/sources_1/bd/Block_Design/Block_Design.bd}
+launch_simulation
+source Block_Design_TB.tcl
+close_sim
+launch_simulation
+source Block_Design_TB.tcl
+current_wave_config {Untitled 2}
+add_wave {{/Block_Design_TB/DUT/Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT}} 
+restart
+run all
+current_wave_config {Untitled 2}
+add_wave {{/Block_Design_TB/DUT/Block_Design_i/FPU_IP_Slave_0}} 
+close_sim

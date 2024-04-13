@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="FPU_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="FPU_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="215.001 ns"></ZoomEndTime>
+      <Cursor1Time time="75.780 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="202"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/FPU_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/DUT/start_reg" type="logic">
+      <obj_property name="ElementShortName">start_reg</obj_property>
+      <obj_property name="ObjectShortName">start_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/DUT/A_reg" type="array">
+      <obj_property name="ElementShortName">A_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_reg[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/DUT/B_reg" type="array">
+      <obj_property name="ElementShortName">B_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_reg[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/DUT/opcode_reg" type="array">
+      <obj_property name="ElementShortName">opcode_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode_reg[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/O" type="array">
+      <obj_property name="ElementShortName">O[31:0]</obj_property>
+      <obj_property name="ObjectShortName">O[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/DUT/o_sign" type="logic">
+      <obj_property name="ElementShortName">o_sign</obj_property>
+      <obj_property name="ObjectShortName">o_sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/DUT/o_exponent" type="array">
+      <obj_property name="ElementShortName">o_exponent[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_exponent[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FPU_tb/DUT/o_mantissa" type="array">
+      <obj_property name="ElementShortName">o_mantissa[24:0]</obj_property>
+      <obj_property name="ObjectShortName">o_mantissa[24:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

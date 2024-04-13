@@ -1,0 +1,8 @@
++===================================+===================================+============================================================================================+
+| Launch Setup Clock                | Launch Hold Clock                 | Pin                                                                                        |
++===================================+===================================+============================================================================================+
+| clk_out1_Block_Design_clk_wiz_0_0 | clk_out1_Block_Design_clk_wiz_0_0 | Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[10]/D |
+| clk_out1_Block_Design_clk_wiz_0_0 | clk_out1_Block_Design_clk_wiz_0_0 | Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[16]/D |
+| clk_out1_Block_Design_clk_wiz_0_0 | clk_out1_Block_Design_clk_wiz_0_0 | Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_exponent_reg[7]/D  |
+| clk_out1_Block_Design_clk_wiz_0_0 | clk_out1_Block_Design_clk_wiz_0_0 | Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[21]/D |
++-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------------+

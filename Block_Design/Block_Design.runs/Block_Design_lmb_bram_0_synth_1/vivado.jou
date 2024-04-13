@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Mon Aug 21 01:05:03 2023
+# Process ID: 18660
+# Current directory: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_lmb_bram_0_synth_1
+# Command line: vivado.exe -log Block_Design_lmb_bram_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_Design_lmb_bram_0.tcl
+# Log file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_lmb_bram_0_synth_1/Block_Design_lmb_bram_0.vds
+# Journal file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_lmb_bram_0_synth_1\vivado.jou
+# Running On: DESKTOP-7P0D6RH, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16836 MB
+#-----------------------------------------------------------
+source Block_Design_lmb_bram_0.tcl -notrace

@@ -1,0 +1,76 @@
+#include "stdio.h"
+#include "xuartlite.h"
+#include "FPU_IP_Slave.h"
+#include "platform.h"
+#include "xparameters.h"
+#include "xil_io.h"
+
+
+#define uart_id XPAR_UARTLITE_0_DEVICE_ID
+
+
+int main() {
+    //init_platform();
+
+	XUartLite uart;
+    XUartLite_Initialize(&uart, uart_id);
+    print("Let's go!\n\r");
+
+    float A, B;
+
+    A = 10.20;  // 32'b0_10000010_01000110011001100110011        1092825907
+    B = 2.04;   // 32'b0_10000000_00000101000111101011100
+
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 4, A);
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 8, B);
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 12, 0);   // opcode = add
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 0, 1);	   // start = 1
+
+    for (int i = 0; i < 10000; ++i);
+
+    FPU_IP_SLAVE_mReadReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 16);       // output
+
+
+    A = 7.546;  // 32'b0_10000001_11100010111100011010101
+    B = -6.24;  // 32'b1_10000001_10001111010111000010100
+
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 4, A);
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 8, B);
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 12, 1);   // opcode = sub
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 0, 1);	   // start = 1
+
+    for (int i = 0; i < 10000; ++i);
+
+    FPU_IP_SLAVE_mReadReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 16);       // output
+
+
+    A = -2.354;  // 32'b1_10000000_00101101010011111110000
+    B = 0.998;   // 32'b0_01111110_11111110111110011101110
+
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 4, A);
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 8, B);
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 12, 3);   // opcode = div
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 0, 0);	   // start = 0
+
+    for (int i = 0; i < 10000; ++i);
+
+    FPU_IP_SLAVE_mReadReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 16);       // output
+
+
+    A = -3.1415;  // 32'b1_10000000_10010010000111001010110
+    B = 99.987;   // 32'b0_10000101_10001111111100101011000
+
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 4, A);
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 8, B);
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 12, 2);   // opcode = mul
+    FPU_IP_SLAVE_mWriteReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 0, 1);	   // start = 1
+
+    for (int i = 0; i < 10000; ++i);
+
+    FPU_IP_SLAVE_mReadReg(XPAR_FPU_IP_SLAVE_0_S00_AXI_BASEADDR, 16);       // output
+
+
+
+    //cleanup_platform();
+    return 0;
+}

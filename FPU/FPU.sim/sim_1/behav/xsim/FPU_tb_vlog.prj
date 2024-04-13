@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FPU.srcs/sources_1/new/Add Div Normaliser.v" \
+"../../../../FPU.srcs/sources_1/new/Adder.v" \
+"../../../../FPU.srcs/sources_1/new/Divider.v" \
+"../../../../FPU.srcs/sources_1/new/FPU.v" \
+"../../../../FPU.srcs/sources_1/new/Multiplier Normaliser.v" \
+"../../../../FPU.srcs/sources_1/new/Multiplier.v" \
+"../../../../FPU.srcs/sim_1/new/FPU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

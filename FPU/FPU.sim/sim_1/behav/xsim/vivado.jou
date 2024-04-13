@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Mon Aug 21 01:13:35 2023
+# Process ID: 12548
+# Current directory: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/FPU/FPU.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9688 D:\Materiale_pentru_facultate\Licenta\Anul_4\Semestrul_1\P3\FPU\FPU.sim\sim_1\behav\xsim\FPU_tb_behav.wdb
+# Log file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/FPU/FPU.sim/sim_1/behav/xsim/vivado.log
+# Journal file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/FPU/FPU.sim/sim_1/behav/xsim\vivado.jou
+# Running On: DESKTOP-7P0D6RH, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16836 MB
+#-----------------------------------------------------------
+start_gui
+open_wave_database {D:\Materiale_pentru_facultate\Licenta\Anul_4\Semestrul_1\P3\FPU\FPU.sim\sim_1\behav\xsim\FPU_tb_behav.wdb}
+close_sim

@@ -1,0 +1,92 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jan  7 16:28:15 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file FPU_control_sets_placed.rpt
+| Design       : FPU
+| Device       : xc7s50
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    35 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    14 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             243 |          143 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              67 |           30 |
+| Yes          | No                    | No                     |             206 |          108 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               1 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------+-----------------+------------------+------------------+----------------+--------------+
+|                       Clock Signal                       |  Enable Signal  | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------------------+-----------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                                           | start_reg       | p_0_in           |                1 |              1 |         1.00 |
+|  adder/o_sign_reg_i_2_n_2                                |                 |                  |                1 |              1 |         1.00 |
+|  divider/add_div_normaliser/out_e_reg[7]_i_1__0_n_2_BUFG |                 |                  |               18 |             30 |         1.67 |
+|  clk_IBUF_BUFG                                           | o_mantissa      |                  |               21 |             31 |         1.48 |
+|  multiplier/mul_normaliser/out_e_reg[7]_i_2_n_2_BUFG     |                 |                  |               15 |             31 |         2.07 |
+|  i_e__0_5                                                |                 |                  |               17 |             32 |         1.88 |
+|  n_0_50_BUFG                                             |                 |                  |               20 |             32 |         1.60 |
+| ~n_1_1844_BUFG                                           |                 |                  |               26 |             32 |         1.23 |
+|  o_exponent                                              |                 |                  |               18 |             33 |         1.83 |
+|  clk_IBUF_BUFG                                           | multiplier/E[0] |                  |               22 |             47 |         2.14 |
+|  i_e__0                                                  |                 |                  |               28 |             52 |         1.86 |
+|  clk_IBUF_BUFG                                           | adder_a_in      |                  |               30 |             64 |         2.13 |
+|  clk_IBUF_BUFG                                           | divider_a_in    |                  |               35 |             64 |         1.83 |
+|  clk_IBUF_BUFG                                           |                 | p_0_in           |               30 |             67 |         2.23 |
++----------------------------------------------------------+-----------------+------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,1481 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Jan 11 20:25:26 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Block_Design_wrapper_methodology_drc_routed.rpt -pb Block_Design_wrapper_methodology_drc_routed.pb -rpx Block_Design_wrapper_methodology_drc_routed.rpx
+| Design       : Block_Design_wrapper
+| Device       : xc7s50csga324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 287
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                           | 1          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
+| TIMING-16 | Warning  | Large setup violation                                  | 35         |
+| TIMING-20 | Warning  | Non-clocked latch                                      | 246        |
+| TIMING-23 | Warning  | Combinational loop found                               | 1          |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
+| LATCH-1   | Advisory | Existing latches in the design                         | 1          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell Block_Design_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Block_Design_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.245 ns between Block_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_stop_if_delay_i_reg/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[25].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENBWREN (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.756 ns between Block_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_stop_if_delay_i_reg/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[30].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENBWREN (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.908 ns between Block_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_stop_if_delay_i_reg/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENBWREN (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -10.378 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[0]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -10.422 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_exponent_reg[6]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -10.460 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_exponent_reg[0]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -10.628 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[21]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -10.773 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_exponent_reg[5]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -10.807 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_exponent_reg[2]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -10.945 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_exponent_reg[1]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -10.992 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[5]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -11.048 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[2]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -11.070 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[3]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -11.089 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[6]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -11.097 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_exponent_reg[4]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -11.136 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[4]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -11.151 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_exponent_reg[7]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -11.277 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[1]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -11.280 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[22]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -11.300 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_exponent_reg[3]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -12.202 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[20]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -12.407 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[19]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -13.461 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[18]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -15.121 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[17]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -15.332 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[16]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -17.594 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[15]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -18.618 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[14]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -19.064 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[13]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -2.097 ns between Block_Design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_stop_if_delay_i_reg/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[29].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENBWREN (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -21.002 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[12]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -43.003 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[11]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -45.332 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[10]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -49.731 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[9]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -52.657 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[8]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -55.833 ns between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider_b_in_reg[9]/C (clocked by clk_out1_Block_Design_clk_wiz_0_0) and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/o_mantissa_reg[7]/D (clocked by clk_out1_Block_Design_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_e_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[10] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[11] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[12] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[13] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[14] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[15] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[16] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[17] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[18] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[19] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[20] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[21] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[22] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[23] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[24] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[8] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[9] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/add_div_normaliser/out_m_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_e_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[10] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[11] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[12] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[13] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[14] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[15] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[16] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[17] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[18] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[19] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[20] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[21] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[22] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[23] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[8] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[9] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/i_m_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_exponent_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[10] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[11] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[12] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[13] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[14] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[15] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[16] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[17] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[18] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[19] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[20] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[21] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[22] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[23] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[24] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[8] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[9] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_mantissa_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_sign_reg cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/adder/o_sign_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_e_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[10] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#108 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[11] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#109 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[12] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#110 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[13] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#111 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[14] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#112 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[15] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#113 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[16] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#114 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[17] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#115 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[18] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#116 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[19] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#117 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#118 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[20] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#119 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[21] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#120 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[22] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#121 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#122 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#123 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#124 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#125 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#126 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#127 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[8] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#128 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[9] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/add_div_normaliser/out_m_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#129 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#130 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#131 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#132 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#133 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#134 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#135 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#136 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_e_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#137 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#138 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[10] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#139 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[11] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#140 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[12] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#141 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[13] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#142 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[14] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#143 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[15] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#144 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[16] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#145 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[17] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#146 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[18] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#147 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[19] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#148 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#149 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[20] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#150 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[21] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#151 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[22] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#152 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[23] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#153 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#154 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#155 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#156 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#157 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#158 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#159 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[8] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#160 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[9] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/divider/i_m_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#161 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#162 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#163 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#164 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#165 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#166 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#167 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#168 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_e_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#169 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#170 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[10] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#171 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[11] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#172 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[12] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#173 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[13] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#174 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[14] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#175 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[15] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#176 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[16] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#177 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[17] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#178 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[18] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#179 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[19] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#180 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#181 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[20] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#182 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[21] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#183 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[22] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#184 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[23] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#185 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[24] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#186 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[25] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#187 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[26] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#188 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[27] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#189 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[28] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#190 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[29] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#191 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#192 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[30] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#193 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[31] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#194 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[32] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#195 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[33] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[33]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#196 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[34] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[34]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#197 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[35] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[35]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#198 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[36] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[36]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#199 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[37] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[37]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#200 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[38] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[38]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#201 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[39] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[39]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#202 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#203 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[40] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[40]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#204 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[41] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[41]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#205 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[42] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[42]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#206 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[43] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[43]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#207 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[44] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[44]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#208 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[45] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[45]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#209 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[46] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[46]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#210 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#211 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#212 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#213 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#214 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[8] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#215 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[9] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/i_m_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#216 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[0] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#217 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[1] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#218 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[2] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#219 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[3] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#220 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[4] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#221 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[5] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#222 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[6] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#223 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[7] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_e_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#224 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[23] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#225 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[24] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#226 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[25] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#227 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[26] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#228 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[27] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#229 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[28] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#230 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[29] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#231 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[30] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#232 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[31] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#233 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[32] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#234 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[33] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[33]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#235 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[34] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[34]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#236 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[35] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[35]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#237 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[36] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[36]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#238 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[37] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[37]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#239 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[38] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[38]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#240 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[39] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[39]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#241 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[40] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[40]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#242 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[41] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[41]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#243 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[42] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[42]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#244 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[43] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[43]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#245 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[44] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[44]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#246 Warning
+Non-clocked latch  
+The latch Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[45] cannot be properly analyzed as its control pin Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/multiplier/mul_normaliser/out_m_reg[45]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/i_m_reg[6]_i_2/S[3] and Block_Design_i/FPU_IP_Slave_0/inst/FPU_IP_Slave_v1_0_S00_AXI_inst/DUT/i_m_reg[6]_i_2/O[3] to disable the timing loop
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 83.333 -name sys_clock [get_ports sys_clock] (Source: D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.srcs/constrs_1/new/Constraints_Block_Design.xdc (Line: 2))
+Previous: create_clock -period 83.333 [get_ports sys_clock] (Source: d:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 83.333 -name sys_clock [get_ports sys_clock] (Source: D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.srcs/constrs_1/new/Constraints_Block_Design.xdc (Line: 2))
+Previous: create_clock -period 83.333 [get_ports sys_clock] (Source: d:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0.xdc (Line: 56))
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 246 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

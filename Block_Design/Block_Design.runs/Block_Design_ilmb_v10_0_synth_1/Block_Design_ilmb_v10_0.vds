@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Mon Aug 21 01:05:00 2023
+# Process ID: 15656
+# Current directory: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log Block_Design_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_Design_ilmb_v10_0.tcl
+# Log file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_ilmb_v10_0_synth_1/Block_Design_ilmb_v10_0.vds
+# Journal file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_ilmb_v10_0_synth_1\vivado.jou
+# Running On: DESKTOP-7P0D6RH, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16836 MB
+#-----------------------------------------------------------
+source Block_Design_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 449.152 ; gain = 165.137
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/ip_repo/FPU_IP_Slave_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Block_Design_ilmb_v10_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 5163e1256c0e4d1d to dir: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_ilmb_v10_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.cache/ip/2023.1.1/5/1/5163e1256c0e4d1d/Block_Design_dlmb_v10_0.dcp to D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_ilmb_v10_0_synth_1/Block_Design_ilmb_v10_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.cache/ip/2023.1.1/5/1/5163e1256c0e4d1d/Block_Design_dlmb_v10_0_sim_netlist.v to D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_ilmb_v10_0_synth_1/Block_Design_ilmb_v10_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.cache/ip/2023.1.1/5/1/5163e1256c0e4d1d/Block_Design_dlmb_v10_0_sim_netlist.vhdl to D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_ilmb_v10_0_synth_1/Block_Design_ilmb_v10_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.cache/ip/2023.1.1/5/1/5163e1256c0e4d1d/Block_Design_dlmb_v10_0_stub.v to D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_ilmb_v10_0_synth_1/Block_Design_ilmb_v10_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.cache/ip/2023.1.1/5/1/5163e1256c0e4d1d/Block_Design_dlmb_v10_0_stub.vhdl to D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/Block_Design/Block_Design.runs/Block_Design_ilmb_v10_0_synth_1/Block_Design_ilmb_v10_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Block_Design_ilmb_v10_0, cache-ID = 5163e1256c0e4d1d.
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 21 01:05:20 2023...

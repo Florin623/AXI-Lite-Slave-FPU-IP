@@ -1,0 +1,352 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Jan  7 16:48:20 2023
+# Process ID: 8912
+# Current directory: D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1
+# Command line: vivado.exe -log Block_Design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_Design_wrapper.tcl
+# Log file: D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/Block_Design_wrapper.vds
+# Journal file: D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1\vivado.jou
+# Running On: DESKTOP-4GQ0V91, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16836 MB
+#-----------------------------------------------------------
+source Block_Design_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/ip_repo/FPU_IP_Slave_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.cache/ip 
+Command: synth_design -top Block_Design_wrapper -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27784
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1234.168 ; gain = 407.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_wrapper' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/hdl/Block_Design_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_FPU_IP_Slave_0_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_FPU_IP_Slave_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_FPU_IP_Slave_0_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_FPU_IP_Slave_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_axi_uartlite_0_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_axi_uartlite_0_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_axi_uartlite_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'Block_Design_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:143]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'Block_Design_axi_uartlite_0_0' has 22 connections declared, but only 21 given [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:143]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_clk_wiz_0_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_clk_wiz_0_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_mdm_1_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_mdm_1_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_microblaze_0_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_microblaze_0_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_microblaze_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'Block_Design_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:183]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'Block_Design_microblaze_0_0' has 52 connections declared, but only 51 given [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:183]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_microblaze_0_axi_periph_0' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:332]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_H1K87E' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:800]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_H1K87E' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:800]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_BQ78ZU' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:932]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_BQ78ZU' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:932]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_8XTMXL' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1312]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_8XTMXL' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1312]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_xbar_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_xbar_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_microblaze_0_axi_periph_0' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:332]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1KP6291' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1078]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_dlmb_bram_if_cntlr_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_dlmb_bram_if_cntlr_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_dlmb_v10_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_dlmb_v10_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_dlmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'Block_Design_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1224]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'Block_Design_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1224]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_ilmb_bram_if_cntlr_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_ilmb_bram_if_cntlr_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_ilmb_v10_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_ilmb_v10_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_ilmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'Block_Design_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1270]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'Block_Design_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1270]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_lmb_bram_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_lmb_bram_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_lmb_bram_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'Block_Design_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1295]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'Block_Design_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1295]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'Block_Design_lmb_bram_0' has 16 connections declared, but only 14 given [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1295]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1KP6291' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:1078]
+INFO: [Synth 8-6157] synthesizing module 'Block_Design_rst_clk_wiz_0_100M_0' [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_rst_clk_wiz_0_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_rst_clk_wiz_0_100M_0' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/.Xil/Vivado-8912-DESKTOP-4GQ0V91/realtime/Block_Design_rst_clk_wiz_0_100M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'Block_Design_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:321]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'Block_Design_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:321]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'Block_Design_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 8 given [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:321]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design' (0#1) [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/synth/Block_Design.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Block_Design_wrapper' (0#1) [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/hdl/Block_Design_wrapper.v:12]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_8XTMXL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_8XTMXL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_8XTMXL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_8XTMXL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_BQ78ZU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_BQ78ZU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_BQ78ZU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_BQ78ZU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_H1K87E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_H1K87E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_H1K87E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_H1K87E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1329.730 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_dlmb_v10_0/Block_Design_dlmb_v10_0/Block_Design_dlmb_v10_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_dlmb_v10_0/Block_Design_dlmb_v10_0/Block_Design_dlmb_v10_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_ilmb_v10_0/Block_Design_ilmb_v10_0/Block_Design_dlmb_v10_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_ilmb_v10_0/Block_Design_ilmb_v10_0/Block_Design_dlmb_v10_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_dlmb_bram_if_cntlr_0/Block_Design_dlmb_bram_if_cntlr_0/Block_Design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_dlmb_bram_if_cntlr_0/Block_Design_dlmb_bram_if_cntlr_0/Block_Design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_ilmb_bram_if_cntlr_0/Block_Design_ilmb_bram_if_cntlr_0/Block_Design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_ilmb_bram_if_cntlr_0/Block_Design_ilmb_bram_if_cntlr_0/Block_Design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_lmb_bram_0/Block_Design_lmb_bram_0/Block_Design_lmb_bram_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_lmb_bram_0/Block_Design_lmb_bram_0/Block_Design_lmb_bram_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_mdm_1_0/Block_Design_mdm_1_0/Block_Design_mdm_1_0_in_context.xdc] for cell 'Block_Design_i/mdm_1'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_mdm_1_0/Block_Design_mdm_1_0/Block_Design_mdm_1_0_in_context.xdc] for cell 'Block_Design_i/mdm_1'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_rst_clk_wiz_0_100M_0/Block_Design_rst_clk_wiz_0_100M_0/Block_Design_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'Block_Design_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_rst_clk_wiz_0_100M_0/Block_Design_rst_clk_wiz_0_100M_0/Block_Design_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'Block_Design_i/rst_clk_wiz_0_100M'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_axi_uartlite_0_0/Block_Design_axi_uartlite_0_0/Block_Design_axi_uartlite_0_0_in_context.xdc] for cell 'Block_Design_i/axi_uartlite_0'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_axi_uartlite_0_0/Block_Design_axi_uartlite_0_0/Block_Design_axi_uartlite_0_0_in_context.xdc] for cell 'Block_Design_i/axi_uartlite_0'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0_in_context.xdc] for cell 'Block_Design_i/clk_wiz_0'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0_in_context.xdc] for cell 'Block_Design_i/clk_wiz_0'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_microblaze_0_0/Block_Design_microblaze_0_0/Block_Design_microblaze_0_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_microblaze_0_0/Block_Design_microblaze_0_0/Block_Design_microblaze_0_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_xbar_0/Block_Design_xbar_0/Block_Design_xbar_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_xbar_0/Block_Design_xbar_0/Block_Design_xbar_0_in_context.xdc] for cell 'Block_Design_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_FPU_IP_Slave_0_0/Block_Design_FPU_IP_Slave_0_0/Block_Design_FPU_IP_Slave_0_0_in_context.xdc] for cell 'Block_Design_i/FPU_IP_Slave_0'
+Finished Parsing XDC File [d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_FPU_IP_Slave_0_0/Block_Design_FPU_IP_Slave_0_0/Block_Design_FPU_IP_Slave_0_0_in_context.xdc] for cell 'Block_Design_i/FPU_IP_Slave_0'
+Parsing XDC File [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.srcs/constrs_1/new/Constraints_Block_Design.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clock' already exists, overwriting the previous clock with the same name. [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.srcs/constrs_1/new/Constraints_Block_Design.xdc:2]
+Finished Parsing XDC File [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.srcs/constrs_1/new/Constraints_Block_Design.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.srcs/constrs_1/new/Constraints_Block_Design.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Block_Design_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Block_Design_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1329.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1329.730 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Block_Design_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  {d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  {d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0_in_context.xdc}, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Block_Design_i/FPU_IP_Slave_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clock'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1329.730 ; gain = 502.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1333.586 ; gain = 506.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1339.348 ; gain = 512.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1339.348 ; gain = 512.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1339.348 ; gain = 512.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1339.348 ; gain = 512.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1339.348 ; gain = 512.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1339.348 ; gain = 512.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |Block_Design_xbar_0               |         1|
+|2     |Block_Design_FPU_IP_Slave_0_0     |         1|
+|3     |Block_Design_axi_uartlite_0_0     |         1|
+|4     |Block_Design_clk_wiz_0_0          |         1|
+|5     |Block_Design_mdm_1_0              |         1|
+|6     |Block_Design_microblaze_0_0       |         1|
+|7     |Block_Design_rst_clk_wiz_0_100M_0 |         1|
+|8     |Block_Design_dlmb_bram_if_cntlr_0 |         1|
+|9     |Block_Design_dlmb_v10_0           |         1|
+|10    |Block_Design_ilmb_bram_if_cntlr_0 |         1|
+|11    |Block_Design_ilmb_v10_0           |         1|
+|12    |Block_Design_lmb_bram_0           |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |Block_Design_FPU_IP_Slave_0     |     1|
+|2     |Block_Design_axi_uartlite_0     |     1|
+|3     |Block_Design_clk_wiz_0          |     1|
+|4     |Block_Design_dlmb_bram_if_cntlr |     1|
+|5     |Block_Design_dlmb_v10           |     1|
+|6     |Block_Design_ilmb_bram_if_cntlr |     1|
+|7     |Block_Design_ilmb_v10           |     1|
+|8     |Block_Design_lmb_bram           |     1|
+|9     |Block_Design_mdm_1              |     1|
+|10    |Block_Design_microblaze_0       |     1|
+|11    |Block_Design_rst_clk_wiz_0_100M |     1|
+|12    |Block_Design_xbar               |     1|
+|13    |IBUF                            |     2|
+|14    |OBUF                            |     1|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1339.348 ; gain = 512.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1339.348 ; gain = 512.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1339.348 ; gain = 512.582
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1351.375 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1358.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e6685259
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Common 17-1381] The checkpoint 'D:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/Block_Design/Block_Design.runs/synth_1/Block_Design_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Block_Design_wrapper_utilization_synth.rpt -pb Block_Design_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  7 16:48:46 2023...

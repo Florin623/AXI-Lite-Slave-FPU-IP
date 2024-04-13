@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Thu Aug 24 22:52:56 2023
+# Process ID: 16316
+# Current directory: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/FPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7576 D:\Materiale_pentru_facultate\Licenta\Anul_4\Semestrul_1\P3\FPU\FPU.xpr
+# Log file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/FPU/vivado.log
+# Journal file: D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/FPU\vivado.jou
+# Running On: DESKTOP-7P0D6RH, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16836 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Materiale_pentru_facultate/Licenta/Anul_4/Semestrul_1/P3/FPU/FPU.xpr
+update_compile_order -fileset sources_1

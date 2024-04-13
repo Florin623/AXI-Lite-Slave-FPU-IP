@@ -1,0 +1,562 @@
+18:08:54 DEBUG : Logs will be stored at 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/IDE.log'.
+18:08:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\temp_xsdb_launch_script.tcl
+18:08:57 INFO  : Platform repository initialization has completed.
+18:08:57 INFO  : Registering command handlers for Vitis TCF services
+18:08:58 INFO  : XSCT server has started successfully.
+18:08:58 INFO  : Successfully done setting XSCT server connection channel  
+18:08:58 INFO  : plnx-install-location is set to ''
+18:08:59 INFO  : Successfully done setting workspace for the tool. 
+18:08:59 INFO  : Successfully done query RDI_DATADIR 
+18:09:29 INFO  : Result from executing command 'getProjects': Block_Design_wrapper
+18:09:29 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+18:09:30 WARN  : An unexpected exception occurred in the module 'platform project logging'
+18:09:30 INFO  : Platform 'Block_Design_wrapper' is added to custom repositories.
+18:09:32 INFO  : Platform 'Block_Design_wrapper' is added to custom repositories.
+18:11:47 INFO  : Hardware specification for platform project 'Block_Design_wrapper' is updated.
+18:35:47 INFO  : Result from executing command 'getProjects': Block_Design_wrapper
+18:35:47 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+00:14:58 DEBUG : Logs will be stored at 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/IDE.log'.
+00:14:59 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\temp_xsdb_launch_script.tcl
+00:15:03 INFO  : Registering command handlers for Vitis TCF services
+00:15:03 INFO  : XSCT server has started successfully.
+00:15:03 INFO  : Successfully done setting XSCT server connection channel  
+00:15:03 INFO  : Platform repository initialization has completed.
+00:15:03 INFO  : plnx-install-location is set to ''
+00:15:03 INFO  : Successfully done setting workspace for the tool. 
+00:15:03 INFO  : Successfully done query RDI_DATADIR 
+01:26:24 INFO  : Result from executing command 'getProjects': Block_Design_wrapper
+01:26:24 INFO  : Result from executing command 'getPlatforms': Block_Design_wrapper|D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/Block_Design_wrapper.xpfm;xilinx_zcu102_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:26:25 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+01:27:03 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+01:28:07 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+01:36:52 INFO  : Result from executing command 'getProjects': Block_Design_wrapper
+01:36:52 INFO  : Result from executing command 'getPlatforms': Block_Design_wrapper|D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/Block_Design_wrapper.xpfm;xilinx_zcu102_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+01:36:53 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+01:43:00 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+01:44:22 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+01:45:52 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+01:48:58 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+01:50:32 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+01:50:56 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+03:50:52 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+05:15:38 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+05:16:05 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:49:04 DEBUG : Logs will be stored at 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/IDE.log'.
+20:49:04 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\temp_xsdb_launch_script.tcl
+20:49:09 INFO  : XSCT server has started successfully.
+20:49:09 INFO  : plnx-install-location is set to ''
+20:49:09 INFO  : Successfully done setting XSCT server connection channel  
+20:49:09 INFO  : Successfully done setting workspace for the tool. 
+20:49:09 INFO  : Registering command handlers for Vitis TCF services
+20:49:10 INFO  : Platform repository initialization has completed.
+20:49:10 INFO  : Successfully done query RDI_DATADIR 
+20:55:17 INFO  : Hardware specification for platform project 'Block_Design_wrapper' is updated.
+21:05:29 INFO  : Result from executing command 'getProjects': Block_Design_wrapper
+21:05:29 INFO  : Result from executing command 'getPlatforms': Block_Design_wrapper|D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/Block_Design_wrapper.xpfm;xilinx_zcu102_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+21:06:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:06:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:06:36 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:33:47 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+21:34:00 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+22:47:02 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+22:47:09 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+22:57:23 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+23:17:31 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+23:18:53 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+23:46:58 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+00:06:12 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+00:15:40 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+00:32:21 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+00:41:39 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+14:51:03 DEBUG : Logs will be stored at 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/IDE.log'.
+14:51:04 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\temp_xsdb_launch_script.tcl
+14:51:08 INFO  : XSCT server has started successfully.
+14:51:08 INFO  : Successfully done setting XSCT server connection channel  
+14:51:08 INFO  : plnx-install-location is set to ''
+14:51:08 INFO  : Successfully done setting workspace for the tool. 
+14:51:09 INFO  : Registering command handlers for Vitis TCF services
+14:51:09 INFO  : Platform repository initialization has completed.
+14:51:10 INFO  : Successfully done query RDI_DATADIR 
+14:56:50 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+16:04:30 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+16:19:25 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+19:10:41 DEBUG : Logs will be stored at 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/IDE.log'.
+19:10:41 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\temp_xsdb_launch_script.tcl
+19:10:46 INFO  : XSCT server has started successfully.
+19:10:46 INFO  : plnx-install-location is set to ''
+19:10:46 INFO  : Successfully done setting XSCT server connection channel  
+19:10:46 INFO  : Successfully done setting workspace for the tool. 
+19:10:46 INFO  : Registering command handlers for Vitis TCF services
+19:10:47 INFO  : Platform repository initialization has completed.
+19:10:47 INFO  : Successfully done query RDI_DATADIR 
+19:28:50 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+19:50:50 DEBUG : Logs will be stored at 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/IDE.log'.
+19:50:51 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\temp_xsdb_launch_script.tcl
+19:50:54 INFO  : XSCT server has started successfully.
+19:50:54 INFO  : Successfully done setting XSCT server connection channel  
+19:50:54 INFO  : plnx-install-location is set to ''
+19:50:54 INFO  : Successfully done setting workspace for the tool. 
+19:50:54 INFO  : Registering command handlers for Vitis TCF services
+19:50:54 INFO  : Successfully done query RDI_DATADIR 
+19:50:54 INFO  : Platform repository initialization has completed.
+20:13:41 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:14:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:14:01 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:14:01 INFO  : 'jtag frequency' command is executed.
+20:14:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:14:02 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit"
+20:14:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:14:02 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa'.
+20:14:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:14:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:14:02 INFO  : System reset is completed.
+20:14:05 INFO  : 'after 3000' command is executed.
+20:14:05 INFO  : Context for processor 'microblaze_0' is selected.
+20:14:05 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:14:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf
+----------------End of Script----------------
+
+20:14:05 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:14:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:14:21 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:14:21 INFO  : 'jtag frequency' command is executed.
+20:14:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:14:22 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit"
+20:14:22 INFO  : Context for processor 'microblaze_0' is selected.
+20:14:22 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa'.
+20:14:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:14:22 INFO  : Context for processor 'microblaze_0' is selected.
+20:14:22 INFO  : System reset is completed.
+20:14:25 INFO  : 'after 3000' command is executed.
+20:14:25 INFO  : Context for processor 'microblaze_0' is selected.
+20:14:25 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:14:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf
+----------------End of Script----------------
+
+20:14:25 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:17:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:17:03 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:17:03 INFO  : 'jtag frequency' command is executed.
+20:17:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:17:04 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit"
+20:17:04 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:04 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa'.
+20:17:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:17:04 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:04 INFO  : System reset is completed.
+20:17:07 INFO  : 'after 3000' command is executed.
+20:17:07 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:07 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:17:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf
+----------------End of Script----------------
+
+20:17:07 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:18:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:18:37 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:18:37 INFO  : 'jtag frequency' command is executed.
+20:18:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:18:38 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit"
+20:18:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:38 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa'.
+20:18:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:18:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:38 INFO  : System reset is completed.
+20:18:42 INFO  : 'after 3000' command is executed.
+20:18:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:42 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:18:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf
+----------------End of Script----------------
+
+20:18:42 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:19:33 INFO  : Build configuration of 'P3_Software' is updated to 'Release'
+20:19:33 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:19:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:19:48 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:19:48 INFO  : 'jtag frequency' command is executed.
+20:19:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:19:50 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit"
+20:19:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:19:50 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa'.
+20:19:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:19:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:19:50 INFO  : System reset is completed.
+20:19:53 INFO  : 'after 3000' command is executed.
+20:19:53 INFO  : Context for processor 'microblaze_0' is selected.
+20:19:53 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:19:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Release/P3_Software.elf
+----------------End of Script----------------
+
+20:19:53 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:20:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:00 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:20:00 INFO  : 'jtag frequency' command is executed.
+20:20:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:20:01 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit"
+20:20:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:02 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa'.
+20:20:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:20:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:02 INFO  : System reset is completed.
+20:20:05 INFO  : 'after 3000' command is executed.
+20:20:05 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:05 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:20:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Release/P3_Software.elf
+----------------End of Script----------------
+
+20:20:05 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:20:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:17 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:20:17 INFO  : 'jtag frequency' command is executed.
+20:20:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:20:18 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit"
+20:20:18 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:18 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa'.
+20:20:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:20:19 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:19 INFO  : System reset is completed.
+20:20:22 INFO  : 'after 3000' command is executed.
+20:20:22 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:22 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:20:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Release/P3_Software.elf
+----------------End of Script----------------
+
+20:20:22 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:20:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:31 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:20:31 INFO  : 'jtag frequency' command is executed.
+20:20:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:20:33 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit"
+20:20:33 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:33 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa'.
+20:20:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:20:33 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:33 INFO  : System reset is completed.
+20:20:36 INFO  : 'after 3000' command is executed.
+20:20:36 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:36 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:20:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Release/P3_Software.elf
+----------------End of Script----------------
+
+20:20:36 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+20:27:45 INFO  : Hardware specification for platform project 'Block_Design_wrapper' is updated.
+20:28:13 INFO  : Result from executing command 'removePlatformRepo': 
+20:32:15 INFO  : Result from executing command 'getProjects': Block_Design_wrapper
+20:32:15 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:32:23 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:32:26 INFO  : The hardware specification used by project 'P3_Software' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:32:26 INFO  : The file 'D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\P3_Software\_ide\bitstream\Block_Design_wrapper.bit' stored in project is removed.
+20:32:26 INFO  : The file 'D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\P3_Software\_ide\bitstream\Block_Design_wrapper.mmi' stored in project is removed.
+20:32:26 INFO  : The updated bitstream files are copied from platform to folder 'D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\P3_Software\_ide\bitstream' in project 'P3_Software'.
+20:32:49 INFO  : Build configuration of 'P3_Software_system' is updated to 'Debug'
+20:32:49 INFO  : Build configuration of system project is automatically updated to 'Debug'.
+20:32:49 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:32:55 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:33:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:33:14 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:33:14 INFO  : 'jtag frequency' command is executed.
+20:33:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:33:15 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit"
+20:33:16 INFO  : Context for processor 'microblaze_0' is selected.
+20:33:16 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa'.
+20:33:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:33:16 INFO  : Context for processor 'microblaze_0' is selected.
+20:33:16 INFO  : System reset is completed.
+20:33:19 INFO  : 'after 3000' command is executed.
+20:33:19 INFO  : Context for processor 'microblaze_0' is selected.
+20:33:19 INFO  : The application 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf' is downloaded to processor 'microblaze_0'.
+20:33:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf
+----------------End of Script----------------
+
+20:33:19 INFO  : Context for processor 'microblaze_0' is selected.
+20:33:19 INFO  : 'con' command is executed.
+20:33:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:33:19 INFO  : Launch script is exported to file 'D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\P3_Software_system\_ide\scripts\debugger_p3_software-default_7.tcl'
+20:33:54 INFO  : Disconnected from the channel tcfchan#1.
+20:33:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:33:55 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:33:55 INFO  : 'jtag frequency' command is executed.
+20:33:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:33:55 ERROR : couldn't open "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit": no such file or directory
+20:33:55 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit": no such file or directory
+20:33:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:33:55 ERROR : couldn't open "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit": no such file or directory
+20:34:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:34:02 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:34:02 INFO  : 'jtag frequency' command is executed.
+20:34:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:34:03 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit"
+20:34:03 INFO  : Context for processor 'microblaze_0' is selected.
+20:34:03 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa'.
+20:34:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:34:03 INFO  : Context for processor 'microblaze_0' is selected.
+20:34:03 INFO  : System reset is completed.
+20:34:06 INFO  : 'after 3000' command is executed.
+20:34:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:34:06 INFO  : The application 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf' is downloaded to processor 'microblaze_0'.
+20:34:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf
+----------------End of Script----------------
+
+20:34:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:34:06 INFO  : 'con' command is executed.
+20:34:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:34:06 INFO  : Launch script is exported to file 'D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\P3_Software_system\_ide\scripts\debugger_p3_software-default_8.tcl'
+20:34:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:34:27 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:34:27 INFO  : 'jtag frequency' command is executed.
+20:34:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:34:28 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit"
+20:34:28 INFO  : Context for processor 'microblaze_0' is selected.
+20:34:28 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa'.
+20:34:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:34:28 INFO  : Context for processor 'microblaze_0' is selected.
+20:34:28 INFO  : System reset is completed.
+20:34:31 INFO  : 'after 3000' command is executed.
+20:34:31 INFO  : Context for processor 'microblaze_0' is selected.
+20:34:31 INFO  : The application 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf' is downloaded to processor 'microblaze_0'.
+20:34:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf
+----------------End of Script----------------
+
+20:34:31 INFO  : Context for processor 'microblaze_0' is selected.
+20:34:31 INFO  : 'con' command is executed.
+20:34:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:34:31 INFO  : Launch script is exported to file 'D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\P3_Software_system\_ide\scripts\debugger_p3_software-default_9.tcl'
+20:34:41 INFO  : Disconnected from the channel tcfchan#6.
+20:34:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:34:42 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:34:42 INFO  : 'jtag frequency' command is executed.
+20:34:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:34:42 ERROR : couldn't open "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit": no such file or directory
+20:34:42 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit": no such file or directory
+20:34:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:34:42 ERROR : couldn't open "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper.bit": no such file or directory
+20:35:11 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:35:40 INFO  : Result from executing command 'getProjects': Block_Design_wrapper
+20:35:40 INFO  : Result from executing command 'getPlatforms': Block_Design_wrapper|D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/Block_Design_wrapper.xpfm;xilinx_zcu102_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:35:41 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:35:50 WARN  : channel "tcfchan#6" closed
+20:35:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:35:51 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:35:51 INFO  : 'jtag frequency' command is executed.
+20:35:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:35:52 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit"
+20:35:52 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:52 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa'.
+20:35:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:35:52 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:52 INFO  : System reset is completed.
+20:35:55 INFO  : 'after 3000' command is executed.
+20:35:55 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:56 INFO  : The application 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf' is downloaded to processor 'microblaze_0'.
+20:35:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf
+----------------End of Script----------------
+
+20:35:56 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:56 INFO  : 'con' command is executed.
+20:35:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:35:56 INFO  : Launch script is exported to file 'D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\P3_Software_system\_ide\scripts\systemdebugger_p3_software_system_standalone.tcl'
+20:39:57 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:41:11 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:41:38 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:42:09 INFO  : Checking for BSP changes to sync application flags for project 'P3_Software'...
+20:43:01 INFO  : Disconnected from the channel tcfchan#7.
+20:43:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:43:01 INFO  : Jtag cable 'Digilent Arty S7 - 50 210352A6C662A' is selected.
+20:43:01 INFO  : 'jtag frequency' command is executed.
+20:43:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}' command is executed.
+20:43:02 INFO  : Device configured successfully with "D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit"
+20:43:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:43:02 INFO  : Hardware design and registers information is loaded from 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa'.
+20:43:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:43:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:43:02 INFO  : System reset is completed.
+20:43:05 INFO  : 'after 3000' command is executed.
+20:43:05 INFO  : Context for processor 'microblaze_0' is selected.
+20:43:06 INFO  : The application 'D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf' is downloaded to processor 'microblaze_0'.
+20:43:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty S7 - 50 210352A6C662A" && level==0 && jtag_device_ctx=="jsn-Arty S7 - 50-210352A6C662A-0362f093-0"}
+fpga -file D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/_ide/bitstream/Block_Design_wrapper2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/Block_Design_wrapper/export/Block_Design_wrapper/hw/Block_Design_wrapper2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Materiale_pentru_facultate/Anul_4/Semestrul_1/P3/Block_Design/P3_Software/Debug/P3_Software.elf
+----------------End of Script----------------
+
+20:43:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:43:06 INFO  : 'con' command is executed.
+20:43:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:43:06 INFO  : Launch script is exported to file 'D:\Materiale_pentru_facultate\Anul_4\Semestrul_1\P3\Block_Design\P3_Software_system\_ide\scripts\systemdebugger_p3_software_system_standalone.tcl'
+20:49:07 INFO  : Disconnected from the channel tcfchan#9.

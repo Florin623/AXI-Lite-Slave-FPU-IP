@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1.2 (64-bit)
+# SW Build 3605665 on Fri Aug  5 22:53:37 MDT 2022
+# IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+# Start of session at: Thu Jan  5 04:48:58 2023
+# Process ID: 2436
+# Current directory: d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/FPU/FPU.tmp/fpu_ip_slave_v1_0_project/FPU_IP_Slave_v1_0_project.runs/synth_1
+# Command line: vivado.exe -log FPU_IP_Slave_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPU_IP_Slave_v1_0.tcl
+# Log file: d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/FPU/FPU.tmp/fpu_ip_slave_v1_0_project/FPU_IP_Slave_v1_0_project.runs/synth_1/FPU_IP_Slave_v1_0.vds
+# Journal file: d:/Materiale pentru facultate/Anul 4/Semestrul 1/P3/FPU/FPU.tmp/fpu_ip_slave_v1_0_project/FPU_IP_Slave_v1_0_project.runs/synth_1\vivado.jou
+# Running On: DESKTOP-4GQ0V91, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16836 MB
+#-----------------------------------------------------------
+source FPU_IP_Slave_v1_0.tcl -notrace

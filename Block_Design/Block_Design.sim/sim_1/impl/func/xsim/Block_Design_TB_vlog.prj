@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../Block_Design.gen/sources_1/bd/Block_Design/ipshared/7698" --include "../../../../../Block_Design.gen/sources_1/bd/Block_Design/ipshared/ec67/hdl" \
+"Block_Design_TB_func_impl.v" \
+"../../../../../Block_Design.srcs/sim_1/new/Block_Design_TB.v" \
+
+# Do not sort compile order
+nosort

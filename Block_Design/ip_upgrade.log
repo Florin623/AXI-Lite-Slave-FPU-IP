@@ -1,0 +1,480 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Mon Aug 21 01:03:01 2023
+| Host         : DESKTOP-7P0D6RH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_rst_clk_wiz_0_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of Block_Design_rst_clk_wiz_0_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Mon Aug 21 01:03:01 2023
+| Host         : DESKTOP-7P0D6RH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_microblaze_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_microblaze_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 28) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Mon Aug 21 01:03:01 2023
+| Host         : DESKTOP-7P0D6RH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_microblaze_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_microblaze_0_0 (xilinx.com:ip:microblaze:11.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Mon Aug 21 01:03:01 2023
+| Host         : DESKTOP-7P0D6RH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_mdm_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_mdm_1_0 (xilinx.com:ip:mdm:3.2) from (Rev. 23) to (Rev. 24)
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_M_AXIS_ID_WIDTH to value 7 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Mon Aug 21 01:03:01 2023
+| Host         : DESKTOP-7P0D6RH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_lmb_bram_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_lmb_bram_0 (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Mon Aug 21 01:03:01 2023
+| Host         : DESKTOP-7P0D6RH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_ilmb_bram_if_cntlr_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Block_Design_ilmb_bram_if_cntlr_0 (xilinx.com:ip:lmb_bram_if_cntlr:4.0) from (Rev. 21) to (Rev. 22)
+
+2. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'Block_Design_ilmb_bram_if_cntlr_0'. These changes may impact your design.
+
+
+-Upgrade has added address block 'SLMB4/Mem'
+
+-Upgrade has added address block 'SLMB5/Mem'
+
+-Upgrade has added address block 'SLMB6/Mem'
+
+-Upgrade has added address block 'SLMB7/Mem'
+
+
+3. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Mon Aug 21 01:03:01 2023
+| Host         : DESKTOP-7P0D6RH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_dlmb_bram_if_cntlr_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Block_Design_dlmb_bram_if_cntlr_0 (xilinx.com:ip:lmb_bram_if_cntlr:4.0) from (Rev. 21) to (Rev. 22)
+
+2. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'Block_Design_dlmb_bram_if_cntlr_0'. These changes may impact your design.
+
+
+-Upgrade has added address block 'SLMB4/Mem'
+
+-Upgrade has added address block 'SLMB5/Mem'
+
+-Upgrade has added address block 'SLMB6/Mem'
+
+-Upgrade has added address block 'SLMB7/Mem'
+
+
+3. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Mon Aug 21 01:03:01 2023
+| Host         : DESKTOP-7P0D6RH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Mon Aug 21 01:03:01 2023
+| Host         : DESKTOP-7P0D6RH running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Block_Design_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 31) to (Rev. 32)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Unable to set the value 'usb_uart' on parameter 'UARTLITE BOARD INTERFACE' due to the following failure - 
+Value 'usb_uart' is out of the range for parameter 'UARTLITE BOARD INTERFACE(UARTLITE_BOARD_INTERFACE)' for BD Cell 'Block_Design_axi_uartlite_0_0' . Valid values are - Custom
+. Restoring to an old valid value of 'Custom'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_uartlite:2.0 -user_name Block_Design_axi_uartlite_0_0
+set_property -dict "\
+  CONFIG.ACLK.ASSOCIATED_BUSIF {S_AXI} \
+  CONFIG.ACLK.ASSOCIATED_PORT {} \
+  CONFIG.ACLK.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.ACLK.CLK_DOMAIN {/clk_wiz_0_clk_out1} \
+  CONFIG.ACLK.FREQ_HZ {100000000} \
+  CONFIG.ACLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.ACLK.INSERT_VIP {0} \
+  CONFIG.ACLK.PHASE {0.0} \
+  CONFIG.ARESETN.INSERT_VIP {0} \
+  CONFIG.ARESETN.POLARITY {ACTIVE_LOW} \
+  CONFIG.C_BAUDRATE {9600} \
+  CONFIG.C_DATA_BITS {8} \
+  CONFIG.C_ODD_PARITY {0} \
+  CONFIG.C_S_AXI_ACLK_FREQ_HZ {100000000} \
+  CONFIG.C_S_AXI_ACLK_FREQ_HZ_d {100.0} \
+  CONFIG.C_USE_PARITY {0} \
+  CONFIG.Component_Name {Block_Design_axi_uartlite_0_0} \
+  CONFIG.INTERRUPT.PortWidth {1} \
+  CONFIG.INTERRUPT.SENSITIVITY {EDGE_RISING} \
+  CONFIG.PARITY {No_Parity} \
+  CONFIG.S_AXI.ADDR_WIDTH {4} \
+  CONFIG.S_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S_AXI.BUSER_WIDTH {0} \
+  CONFIG.S_AXI.CLK_DOMAIN {/clk_wiz_0_clk_out1} \
+  CONFIG.S_AXI.DATA_WIDTH {32} \
+  CONFIG.S_AXI.FREQ_HZ {100000000} \
+  CONFIG.S_AXI.HAS_BRESP {1} \
+  CONFIG.S_AXI.HAS_BURST {0} \
+  CONFIG.S_AXI.HAS_CACHE {0} \
+  CONFIG.S_AXI.HAS_LOCK {0} \
+  CONFIG.S_AXI.HAS_PROT {0} \
+  CONFIG.S_AXI.HAS_QOS {0} \
+  CONFIG.S_AXI.HAS_REGION {0} \
+  CONFIG.S_AXI.HAS_RRESP {1} \
+  CONFIG.S_AXI.HAS_WSTRB {1} \
+  CONFIG.S_AXI.ID_WIDTH {0} \
+  CONFIG.S_AXI.INSERT_VIP {0} \
+  CONFIG.S_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S_AXI.NUM_READ_OUTSTANDING {2} \
+  CONFIG.S_AXI.NUM_READ_THREADS {1} \
+  CONFIG.S_AXI.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.S_AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.S_AXI.PHASE {0.0} \
+  CONFIG.S_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.RUSER_WIDTH {0} \
+  CONFIG.S_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.WUSER_WIDTH {0} \
+  CONFIG.UART.BOARD.ASSOCIATED_PARAM {UARTLITE_BOARD_INTERFACE} \
+  CONFIG.UARTLITE_BOARD_INTERFACE {usb_uart} \
+  CONFIG.USE_BOARD_FLOW {true} " [get_ips Block_Design_axi_uartlite_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jan 10 20:46:05 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_FPU_IP_Slave_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_FPU_IP_Slave_0_0 (Florin:user:FPU_IP_Slave:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jan  7 16:43:08 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_FPU_IP_Slave_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_FPU_IP_Slave_0_0 (Florin:user:FPU_IP_Slave:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jan  7 16:31:55 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_microblaze_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_microblaze_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 27) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jan  7 16:31:55 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_microblaze_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_microblaze_0_0 (xilinx.com:ip:microblaze:11.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jan  7 16:31:55 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jan  7 16:31:55 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 30) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (win64) Build 3605665 Fri Aug  5 22:53:37 MDT 2022
+| Date         : Sat Jan  7 03:08:42 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_FPU_IP_Slave_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_FPU_IP_Slave_0_0 (Florin:user:FPU_IP_Slave:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (win64) Build 3605665 Fri Aug  5 22:53:37 MDT 2022
+| Date         : Sat Jan  7 02:48:00 2023
+| Host         : DESKTOP-4GQ0V91 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Block_Design_FPU_IP_Slave_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Block_Design_FPU_IP_Slave_0_0 (Florin:user:FPU_IP_Slave:1.0) from (Rev. 4) to (Rev. 5)
+

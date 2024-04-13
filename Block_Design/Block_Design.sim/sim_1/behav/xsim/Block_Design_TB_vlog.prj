@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Block_Design.gen/sources_1/bd/Block_Design/ipshared/30ef" --include "../../../../Block_Design.gen/sources_1/bd/Block_Design/ipshared/ec67/hdl" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_dlmb_v10_0/Block_Design_dlmb_v10_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_ilmb_v10_0/Block_Design_ilmb_v10_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_dlmb_bram_if_cntlr_0/Block_Design_dlmb_bram_if_cntlr_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_ilmb_bram_if_cntlr_0/Block_Design_ilmb_bram_if_cntlr_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_lmb_bram_0/sim/Block_Design_lmb_bram_0.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ipshared/2dd0/src/Add Div Normaliser.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ipshared/2dd0/src/Adder.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ipshared/2dd0/src/Divider.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ipshared/2dd0/src/FPU.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ipshared/2dd0/hdl/FPU_IP_Slave_v1_0_S00_AXI.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ipshared/2dd0/src/Multiplier Normaliser.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ipshared/2dd0/src/Multiplier.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ipshared/2dd0/hdl/FPU_IP_Slave_v1_0.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_FPU_IP_Slave_0_0/sim/Block_Design_FPU_IP_Slave_0_0.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_axi_uartlite_0_0/Block_Design_axi_uartlite_0_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_clk_wiz_0_0/Block_Design_clk_wiz_0_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_mdm_1_0/Block_Design_mdm_1_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_microblaze_0_0/Block_Design_microblaze_0_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_xbar_0/Block_Design_xbar_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/ip/Block_Design_rst_clk_wiz_0_100M_0/Block_Design_rst_clk_wiz_0_100M_0_sim_netlist.v" \
+"../../../../Block_Design.ip_user_files/bd/Block_Design/Block_Design.gen/sources_1/bd/Block_Design/sim/Block_Design.v" \
+"../../../../Block_Design.gen/sources_1/bd/Block_Design/hdl/Block_Design_wrapper.v" \
+"../../../../Block_Design.srcs/sim_1/new/Block_Design_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
